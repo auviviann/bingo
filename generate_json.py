@@ -31,11 +31,11 @@ def create_manifest():
             print(f"  Skipping {filename} (could not parse number)")
 
     # Write to JSON file
-    with open(OUTPUT_FILE, 'w') as f:
+    with open(ICON_FOLDER + "/" + OUTPUT_FILE, 'w') as f:
         json.dump(data_map, f, indent=2)
 
     print(f"\n✅ Success! Created '{OUTPUT_FILE}' with {len(data_map)} entries.")
     print("👉 ACTION: Upload this JSON file to your GitHub folder.")
 
 if __name__ == "__main__":
-    create_manifest();
+    create_manifest()
