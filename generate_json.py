@@ -2,8 +2,8 @@ import os
 import json
 
 # --- CONFIGURATION ---
-ICON_FOLDER = "xmas"  # Folder name containing images
-OUTPUT_FILE = "bingo_map.json"
+ICON_FOLDER = "Vo_lny"  # Folder name containing images
+OUTPUT_FILE = "Vo_bingo_map.json"
 
 def create_manifest():
     if not os.path.exists(ICON_FOLDER):
